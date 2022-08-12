@@ -1,0 +1,274 @@
+html {
+  font-size: 0.0700384vw;
+  font-family: "Work Sans", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-width: 100%;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  border: none;
+  position: unset;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.2;
+}
+
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+  content: none;
+}
+
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+  content: none;
+}
+
+body {
+  background: #1E1E1E;
+}
+
+header {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
+  position: fixed;
+  width: 88rem;
+  max-width: 311rem;
+  height: calc(100vh - 20rem);
+  padding: 40rem 17.75rem;
+  background: #2c2c2c;
+  border-radius: 16rem;
+  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s all;
+}
+header::-webkit-scrollbar {
+  width: 0;
+}
+header .nav__trigger {
+  width: 60rem;
+  height: 60rem;
+  border-radius: 8rem;
+  background: #1E1E1E;
+  cursor: pointer;
+  position: absolute;
+  top: 25rem;
+  right: 14rem;
+  border: 1rem solid #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav__trigger:focus {
+  outline: 1rem solid #333333;
+}
+header .nav__trigger .nav__icon svg {
+  width: 40rem;
+  height: 40rem;
+}
+header .container-top {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+header .container-wrapper-logo {
+  display: flex;
+}
+header .container-wrapper-logo .container-logo {
+  display: flex;
+  align-items: center;
+}
+header .container-wrapper-logo .container-logo .logo {
+  margin-left: 6rem;
+  margin-right: 8rem;
+}
+header .container-wrapper-logo .container-logo .logo svg {
+  width: 40rem;
+  height: 40rem;
+}
+header .container-wrapper-logo .container-logo .text-content {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24rem;
+  line-height: 120%;
+  color: #ffffff;
+  display: none;
+}
+header .container-wrapper-search {
+  position: relative;
+  height: 52rem;
+}
+header .container-wrapper-search input {
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  border: none;
+  outline: none;
+  border-radius: 8rem;
+  padding-left: 52rem;
+  padding-right: 0;
+  color: #9E9E9E;
+  font-size: 16rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+header .container-wrapper-search .search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333333;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16rem;
+  border-radius: 8rem;
+  cursor: pointer;
+}
+header .container-wrapper-search .search-icon svg {
+  width: 20rem;
+  height: 20rem;
+}
+header .container-wrapper-menu-group a {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  padding: 16rem;
+  border-radius: 8rem;
+  transition: 0.4s;
+  position: relative;
+}
+header .container-wrapper-menu-group a svg {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  z-index: 10;
+}
+header .container-wrapper-menu-group a span {
+  z-index: 5;
+  color: #9E9E9E;
+  font-size: 16rem;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 600;
+  display: none;
+}
+header .container-wrapper-menu-group a:hover {
+  background: #333333;
+}
+header .container-wrapper-menu-group a:hover span {
+  background: #1E1E1E;
+  position: absolute;
+  display: block;
+  padding: 16rem;
+  border-radius: 8rem;
+  left: -13.5rem;
+  z-index: 11;
+  width: 80rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+header .container-wrapper-menu-group a:hover span:hover {
+  display: block;
+}
+header .container-wrapper-menu-group a:focus {
+  outline: 1rem solid #333333;
+}
+header .container-wrapper-menu-group a:focus svg {
+  color: #BFB2FF;
+}
+header .container-wrapper-menu-group a:focus svg path {
+  stroke: #BFB2FF;
+}
+header .container-wrapper-menu-group a:focus span {
+  color: #BFB2FF;
+}
+header .container-wrapper-profile {
+  padding: 24rem 0;
+  background: transparent;
+  border-radius: 8rem;
+  margin-top: 32rem;
+}
+header .container-wrapper-profile figure {
+  display: flex;
+  justify-content: center;
+}
+header .container-wrapper-profile figure img {
+  width: 40rem;
+  height: 40rem;
+}
+header .container-wrapper-profile figure figcaption {
+  display: none;
+  flex-direction: column;
+  gap: 8rem;
+  margin-left: 16rem;
+}
+header .container-wrapper-profile figure figcaption span:first-child {
+  color: #ffffff;
+  font-size: 16rem;
+  line-height: 120%;
+  font-weight: 600;
+  font-style: normal;
+}
+header .container-wrapper-profile figure figcaption span:last-child {
+  color: #808080;
+  font-size: 12rem;
+  line-height: 120%;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header.active {
+  width: 311rem;
+}
+header.active .container-wrapper-logo .text-content {
+  display: flex;
+}
+header.active .container-wrapper-menu-group a span {
+  display: contents;
+}
+header.active .container-wrapper-menu-group a:hover span {
+  background: transparent;
+  position: relative;
+  display: contents;
+  padding: 0;
+  border-radius: 0;
+  left: 0;
+}
+header.active .container-wrapper-profile {
+  background: #333333;
+  padding: 24rem 16rem;
+}
+header.active .container-wrapper-profile figure {
+  justify-content: start;
+}
+header.active .container-wrapper-profile figure figcaption {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
