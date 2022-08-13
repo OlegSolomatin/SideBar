@@ -255,6 +255,9 @@ header .container-wrapper-menu-group a:focus span {
   header .container-wrapper-menu-group ul {
     display: flex;
   }
+  header .container-wrapper-menu-group ul span {
+    line-height: 100%;
+  }
 }
 header .container-wrapper-profile {
   padding: 24rem 0;

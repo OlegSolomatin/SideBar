@@ -23,9 +23,6 @@ $('#search').on('focus', function (){
     if( !$('header').hasClass('active')){
         $('header').toggleClass('active')
     }
-    /*if($(window).width() <= 991.7){
-        $('#search').toggleClass('focus')
-    }*/
 })
 
 $('.container, main, footer').on('click', function (){

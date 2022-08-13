@@ -267,6 +267,9 @@ header{
     @media screen and (max-width: 991.7px) {
       ul{
         display: flex;
+        span{
+          line-height: 100%;
+        }
       }
     }
   }
