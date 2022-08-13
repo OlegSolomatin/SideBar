@@ -3,11 +3,15 @@ html {
   font-family: "Work Sans", sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  max-width: 100%;
+}
+@media screen and (max-width: 991.7px) {
+  html {
+    font-size: 0.0700384vh;
+  }
 }
 
 html::-webkit-scrollbar {
-  width: 0;
+  display: none;
 }
 
 * {
@@ -64,9 +68,27 @@ header {
   flex-direction: column;
   justify-content: space-between;
   transition: 0.5s all;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 header::-webkit-scrollbar {
-  width: 0;
+  display: none;
+}
+@media screen and (max-width: 991.7px) {
+  header {
+    width: 88rem;
+    max-width: none;
+    height: 88rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0 17.75rem;
+    top: unset;
+    left: unset;
+    right: 0;
+    bottom: 0;
+  }
 }
 header .nav__trigger {
   width: 60rem;
@@ -89,10 +111,30 @@ header .nav__trigger .nav__icon svg {
   width: 40rem;
   height: 40rem;
 }
+@media screen and (max-width: 991.7px) {
+  header .nav__trigger {
+    position: fixed;
+    top: unset;
+    bottom: 25rem;
+    right: 25rem;
+    margin: auto;
+    z-index: 100;
+  }
+}
 header .container-top {
   display: flex;
   flex-direction: column;
   gap: 16rem;
+}
+@media screen and (max-width: 991.7px) {
+  header .container-top {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 991.7px) {
+  header .container-bottom {
+    display: flex;
+  }
 }
 header .container-wrapper-logo {
   display: flex;
@@ -135,6 +177,7 @@ header .container-wrapper-search input {
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  transition: 0.5s all;
 }
 header .container-wrapper-search .search-icon {
   position: absolute;
@@ -208,6 +251,11 @@ header .container-wrapper-menu-group a:focus svg path {
 header .container-wrapper-menu-group a:focus span {
   color: #BFB2FF;
 }
+@media screen and (max-width: 991.7px) {
+  header .container-wrapper-menu-group ul {
+    display: flex;
+  }
+}
 header .container-wrapper-profile {
   padding: 24rem 0;
   background: transparent;
@@ -242,12 +290,32 @@ header .container-wrapper-profile figure figcaption span:last-child {
   font-weight: 600;
   font-style: normal;
 }
+@media screen and (max-width: 991.7px) {
+  header .container-wrapper-profile {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 header.active {
   width: 311rem;
 }
+@media screen and (max-width: 991.7px) {
+  header.active {
+    width: calc(100vw - 20rem);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-right: 88rem;
+  }
+  header.active .container-bottom {
+    align-items: center;
+  }
+}
 header.active .container-wrapper-logo .text-content {
   display: flex;
+}
+header.active .container-wrapper-search .focus {
+  width: 200rem;
 }
 header.active .container-wrapper-menu-group a span {
   display: contents;
@@ -269,6 +337,12 @@ header.active .container-wrapper-profile figure {
 }
 header.active .container-wrapper-profile figure figcaption {
   display: flex;
+}
+
+main {
+  margin: 20rem 20rem 20rem 108rem;
+  font-size: 16rem;
+  color: #9E9E9E;
 }
 
 /*# sourceMappingURL=style.css.map */
