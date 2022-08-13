@@ -8,3 +8,7 @@
 Mobile version - complete
 
 Demo - https://olegsolomatin.github.io/SideBar/
+
+Если это творение увидит кто-то помимо меня, то буду рад вашим исправлениям или улучшениям по работе данного SideBar
+
+If someone besides me sees this creation, I will be glad of your corrections or improvements on the work of this SideBar
